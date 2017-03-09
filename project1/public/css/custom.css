@@ -1,0 +1,275 @@
+#main{
+  margin-left: 0px;
+  width: 100%;
+}
+.thumbnail{
+  width: 250px;
+  height: 190px;
+}
+
+#footer {
+    background: black none repeat scroll 0% 0%;
+    margin-top: 60px;
+    clear: both;
+    color: black;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+}
+
+#footer .widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #FFF;
+}
+
+#footer ul {
+    list-style: outside none none;
+}
+
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+
+#footer li a {
+    color: #DDD;
+}
+
+#sub-floor {
+    color: #AAA;
+    background: black none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+
+/*#drp{
+  background-color: rgba(40,57,101,.9);
+  color: white;
+  border-color: rgba(40,57,101,.9);
+  margin-top: 7px;
+}*/
+
+#nv{
+  width: 70px;
+  height: 60px;
+}
+
+
+/*seatpage css start......>*/
+
+.seat1{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.seat2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seat3{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.seat4{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.seat5{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.seat6{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.seatA{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatB{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatC{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatD{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatE{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatF{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatG{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seatH{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.seat{
+  margin-top: 10px;
+  border: 1px solid gray;
+  width: 650px;
+  height: 380px;
+  background-color: #9999ff;
+  box-shadow: 5px 5px 8px gray;
+}
+
+#tab{
+  margin-left: 30px;
+}
+
+.tam{
+  margin-top: 12px;
+  margin-left:5px;
+}
+
+.sno{
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+
+.choose{
+  margin-left: 150px;
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 370px;
+  background-color: #f2d9d9;
+}
+
+#chose{
+  margin-left: 90px;
+  margin-bottom: 15px;
+}
+
+.screen{
+  margin-top: 30px;
+  margin-left: 50px;
+
+}
+
+#scree{
+  width: 565px;
+}
+
+#sdrop{
+  width: 400px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+#uper{
+  width: 400px;
+  margin-left: 70px;
+  height: 380px;
+  background-color: #bce4f5;
+  box-shadow: 5px 5px 8px gray;
+  padding-left: 20px;
+  margin-top: 148px;
+}
+
+.iconname{
+  margin-left: 190px;
+}
+
+.summary{
+  margin-left: 70px;
+}
+
+#info{
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+#suk{
+  background-color: red;
+  color: white;
+  margin-left: 135px;
+  margin-top: 8px;
+}
+
+/*seat page css End.....>*/
+
+
+/*payment page css start.....>*/
+.submit-button {
+  margin-top: 10px;
+}
+
+#box{
+  margin-top: 10px;
+}
+
+#pay{
+  width: 335px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.payment{
+  margin-top: 30px;
+}
+
+.uperspac{
+  width: 1100px;
+  margin-top: 50px;
+}
+
+#upar{
+  border: 1px solid gray;
+  height: 320px;
+  height: 500px;
+  background-color: #f2d9e6;
+  box-shadow: 5px 5px 2px gray;
+}
+
+.summari{
+  text-align: center;
+}
+
+#inf{
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*payment page css End.....>*/
+
+/*Ticket page css start......*/
+
+#trip{
+  margin-top: 50px;
+  border: 2px solid black;
+  width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f2f2f2;
+}

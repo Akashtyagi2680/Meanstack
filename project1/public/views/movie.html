@@ -1,0 +1,70 @@
+<div style="margin-top: 60px;">
+    <div class="container">
+      <form class="" action="index.html" method="post">
+      <h1>Search Movie</h1>
+        <p style="font-weight: bold;">Movie Name</p>
+      <input type="text" name="" value="" placeholder="Movie" ng-model= "Title">
+      <p style="font-weight: bold;">Year</p>
+      <input type="Number" name="" value="" placeholder="YYYY" ng-model= "Year"><br><br>
+			<button type="button" name="button" ng-click= "searchMovie()" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Search</button></form>
+    </div>
+
+
+
+   <div class="container">
+  <h2>Add Movies</h2>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Runtime</th>
+        <th>Director</th>
+        <th>Language</th>
+        <th>Poster</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{movieData.data.Title}}</td>
+        <td>{{movieData.data.Year}}</td>
+        <td>{{movieData.data.Runtime}}</td>
+        <td>{{movieData.data.Director}}</td>
+        <td>{{movieData.data.Language}}</td>
+        <td><img src={{movieData.data.Poster}} alt="" style="height:100px; width:100px;"></td>
+        <td><button type="button" name="button" ng-click= "addmovie()" class="btn btn-primary" style="margin-top: 30px;"><span class="glyphicon glyphicon-plus"></span> Add</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <h3>Search Movie</h3>
+  <p><input type="text" name="" value="" ng-model=  "Language"></p>
+
+  <h2>Show Movies</h2>
+
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Runtime</th>
+        <th>Director</th>
+        <th>Language</th>
+        <th>Poster</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat= "oa in movieDataa | filter: Language">
+        <td>{{oa.Title}}</td>
+        <td>{{oa.Year}}</td>
+        <td>{{oa.Runtime}}</td>
+        <td>{{oa.Director}}</td>
+        <td>{{oa.Language}}</td>
+        <td><img src={{oa.Poster}} alt="" style="height: 100px; weight: 100px;"></td>
+        <td><button type="button" name="button" ng-click= "deletemovie(oa)" class="btn btn-danger" style="margin-top: 30px;"><span class="glyphicon glyphicon-trash"></span></button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

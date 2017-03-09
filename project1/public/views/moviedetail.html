@@ -1,0 +1,60 @@
+<div style="background: #f2f2f2;">
+
+
+<div class="container" style="margin-top: 50px;">
+  <h1 style="margin-top: 50px; padding-top: 30px; text-transform:uppercase;">SELECT CITY & DATE FOR &nbsp;"{{movie}}"</h1>
+
+  <div class="row" style="padding-bottom: 120px;">
+    <div class="col-md-8">
+      <form>
+        <table class="table">
+          <tr>
+            <th>Movie</th>
+            <th>Runtime</th>
+            <th>Director</th>
+          </tr>
+          <tr>
+            <td>{{movie}}</td>
+            <td>{{runtime}}</td>
+            <td>{{director}}</td>
+          </tr>
+        </table>
+      </form>
+
+      <table class="table">
+        <tr>
+          <td>City:</td>
+          <td style="text-align: left;"><select ng-model ="mappingdata.theatrecity">
+            <option ng-repeat ="c in mappingdata | unique: 'theatrecity'">{{c.theatrecity}}</option>
+          </select></td>
+
+          <td>Date:</td>
+          <td><select ng-model ="mydate">
+            <option ng-repeat ="c in movdates">{{c| date:'yyyy-MM-dd'}}</option>
+          </select></td>
+        </tr>
+
+      </table>
+      <table class="table">
+        <tr>
+
+          <th>Theatre</th>
+          <th>Time</th>
+        </tr>
+        <tr ng-show ="mydate" ng-repeat ="d in mappingdata |filter:mydate |filter:mappingdata.theatrecity |
+         filter: movie">
+
+          <td>{{d.theatrename}}</td>
+          <td><a href="" ng-click= "loc1(d.theatrecity,d.theatrename,d.Date,d.Time)">{{d.Time}}</a></td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="col-md-4">
+			<img src={{poster}} style="height: 300px; width: 300px;">
+		</div>
+
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="css/custom.css">
+<div style="background-color: #f2f2f2; margin-top: 30px;">
+
+<div class="row">
+
+</div>
+
+
+	<div class="payment">
+
+	<div class="container" id="box">
+	    <div class='row'>
+	        <div class='col-md-6'>
+
+						<div class="container">
+						<div><h2 style="text-transform:uppercase;">BOOK TICKETS &nbsp; for &nbsp; "{{movie}}"</h2></div>
+						<form class="form-inline">
+							<div class="">
+								<label for="name">Your Name:</label>
+							<div>  <input type="name" class="form-control" id="name" placeholder="Enter Name" style="width: 250px;"></div>
+						</div>
+							<div class="">
+								<label for="email">Email:</label>
+							<div>	<input type="email" class="form-control" id="email" placeholder="Enter email" style="width: 250px;"></div>
+						</div>
+
+							<div class="">
+								<label for="mobile">Mobile:</label>
+							<div>  <input type="mobile" class="form-control" id="mobile" placeholder="+91" style="width: 250px;"></div>
+							</div>
+						</form>
+					</div>
+
+
+
+	          <form class="require-validation" data-cc-on-file="false" id="payment-form" method="post">
+							<div style="display:inline"><input name="utf8" type="hidden" value="✓" />
+								<input name="_method" type="hidden" value="PUT" />
+								<input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" />
+							</div>
+							<div class="form-row">
+								<div class="col-md-5">
+									<div class="" id="pay">
+										<h3 id="">MAKE PAYMENT</h3>
+									</div>
+								</div>
+								<div class="col-md-7" style="margin-top: 10px;">
+									<img src="Images/cards.png" alt="" style="width: 220px; height: 80px;">
+								</div>
+							</div>
+
+							<div class='form-row'>
+	              <div class='col-xs-12 form-group required'>
+	                <label class='control-label'>Name on Card</label>
+	                <input class='form-control' size='4' type='text' placeholder="Name">
+	              </div>
+	            </div>
+	            <div class='form-row'>
+	              <div class='col-xs-12 form-group card required'>
+	                <label class='control-label'>Card Number</label>
+	                <input autocomplete='off' class='form-control card-number' size='20' type='text' placeholder="Number">
+	              </div>
+	            </div>
+	            <div class='form-row'>
+	              <div class='col-xs-4 form-group cvc required'>
+	                <label class='control-label'>CVV</label>
+	                <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' type='text'>
+	              </div>
+	              <div class='col-xs-4 form-group expiration required'>
+	                <label class='control-label'>Expiration</label>
+	                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'>
+	              </div>
+	              <div class='col-xs-4 form-group expiration required'>
+	                <label class='control-label'> </label>
+	                <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'>
+	              </div>
+	            </div>
+
+	            <div class='form-row'>
+	              <div class='col-md-12 form-group'>
+	                <button ng-click="addbooking()" class='form-control btn btn-primary' type='submit'>Pay » {{amount}}</button>
+									<!-- for pay button class..... (form-control btn btn-primary submit-button) -->
+	              </div>
+	            </div>
+	            <div class='form-row'>
+	              <div class='col-md-12 error form-group hide'>
+	                <div class='alert-danger alert'>
+	                  Please correct the errors and try again.
+	                </div>
+	              </div>
+	            </div>
+	          </form>
+	        </div>
+					<div class='col-md-1'></div>
+
+					<div class='col-md-5'>
+
+						<div class="uperspac">
+								<div id="upar" class="col-lg-5 col-md-5">
+									<div class="summari">
+										<h3>MOVIE SUMMARY</h3>
+									</div>
+									<div class="" style="margin-top: 30px;">
+										<h4>Movie Name&nbsp;:- {{movie}}</h4>
+										<h4>Place&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :-&nbsp;{{tname}}, {{tcity}}</h4>
+										<h4>Date&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:- {{date}}</h4>
+										<h4>Time&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:- {{time}}</h4>
+									</div>
+									<div id="inf">
+										<h3>MOVIE SEAT INFO</h3>
+									</div>
+									<div class="" style="margin-top: 30px;">
+										<h4>Seat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:- <span id="sea">{{seatno121}}</span></h4>
+								  	<h4>No. of seats &nbsp;:- <span id="num" class="sno">{{count121}}</span></h4>
+										<h4>Total &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:- <span id="num1" class="tam">{{amount}}</span></h4>
+								 </div>
+								</div>
+							</div>
+					</div>
+
+	    </div>
+	</div>
+	</div>
+
+</div>
